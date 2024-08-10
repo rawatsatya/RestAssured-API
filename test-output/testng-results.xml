@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="11" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-08-10T21:08:28 IST" name="Suite" finished-at="2024-08-10T21:08:49 IST" duration-ms="20825">
+    <groups>
+    </groups>
+    <test started-at="2024-08-10T21:08:28 IST" name="Test" finished-at="2024-08-10T21:08:49 IST" duration-ms="20825">
+      <class name="TestCases.PostToSearchProductTest">
+        <test-method signature="postToSearchProduct()[pri:0, instance:TestCases.PostToSearchProductTest@799f10e1]" started-at="2024-08-10T21:08:46 IST" name="postToSearchProduct" finished-at="2024-08-10T21:08:47 IST" duration-ms="1064" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postToSearchProduct -->
+      </class> <!-- TestCases.PostToSearchProductTest -->
+      <class name="TestCases.PostToVerifyLoginWithInvalidDetails">
+        <test-method signature="postToverifyWithInvalidDetails()[pri:0, instance:TestCases.PostToVerifyLoginWithInvalidDetails@38d8f54a]" started-at="2024-08-10T21:08:34 IST" name="postToverifyWithInvalidDetails" finished-at="2024-08-10T21:08:36 IST" duration-ms="2051" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postToverifyWithInvalidDetails -->
+      </class> <!-- TestCases.PostToVerifyLoginWithInvalidDetails -->
+      <class name="TestCases.GetUserAccountDetailByEmail">
+        <test-method signature="getUserAccountDetailByEmail()[pri:0, instance:TestCases.GetUserAccountDetailByEmail@55b699ef]" started-at="2024-08-10T21:08:42 IST" name="getUserAccountDetailByEmail" finished-at="2024-08-10T21:08:43 IST" duration-ms="1323" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserAccountDetailByEmail -->
+      </class> <!-- TestCases.GetUserAccountDetailByEmail -->
+      <class name="TestCases.CreateUserAccountTest">
+        <test-method signature="createUserAccount()[pri:0, instance:TestCases.CreateUserAccountTest@42a48628]" started-at="2024-08-10T21:08:28 IST" name="createUserAccount" finished-at="2024-08-10T21:08:32 IST" duration-ms="4056" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUserAccount -->
+      </class> <!-- TestCases.CreateUserAccountTest -->
+      <class name="TestCases.PostToSearchProductWithoutParametersTest">
+        <test-method signature="postToSearchProductWithoutParameter()[pri:0, instance:TestCases.PostToSearchProductWithoutParametersTest@18078bef]" started-at="2024-08-10T21:08:45 IST" name="postToSearchProductWithoutParameter" finished-at="2024-08-10T21:08:46 IST" duration-ms="1083" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postToSearchProductWithoutParameter -->
+      </class> <!-- TestCases.PostToSearchProductWithoutParametersTest -->
+      <class name="TestCases.PutToAllBrandList">
+        <test-method signature="putToAllBrandList()[pri:0, instance:TestCases.PutToAllBrandList@689604d9]" started-at="2024-08-10T21:08:45 IST" name="putToAllBrandList" finished-at="2024-08-10T21:08:45 IST" duration-ms="260" status="FAIL">
+          <exception class="java.net.SocketException">
+            <message>
+              <![CDATA[Connection reset]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.net.SocketException: Connection reset
+at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318)
+at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099)
+at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:489)
+at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:483)
+at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1461)
+at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1066)
+at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:161)
+at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:82)
+at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:276)
+at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:294)
+at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:257)
+at org.apache.http.impl.conn.ManagedClientConnectionImpl.receiveResponseHeader(ManagedClientConnectionImpl.java:207)
+at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:679)
+at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:481)
+at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+at io.restassured.internal.RestAssuredHttpBuilder.doRequest(RestAssuredHttpBuilder.java:141)
+at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:496)
+at io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:453)
+at io.restassured.internal.http.HTTPBuilder$request$3.call(Unknown Source)
+at io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1480)
+at io.restassured.internal.RequestSpecificationImpl.this$2$sendHttpRequest(RequestSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:790)
+at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1229)
+at io.restassured.internal.RequestSpecificationImpl.this$2$sendRequest(RequestSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:790)
+at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
+at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+at io.restassured.filter.Filter$filter.call(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+at io.restassured.filter.Filter$filter.call(Unknown Source)
+at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+at io.restassured.filter.FilterContext$next.call(Unknown Source)
+at io.restassured.internal.filter.CsrfFilter.filter(CsrfFilter.groovy:70)
+at io.restassured.filter.Filter$filter.call(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+at io.restassured.filter.Filter$filter.call(Unknown Source)
+at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+at io.restassured.filter.FilterContext$next.call(Unknown Source)
+at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1704)
+at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:790)
+at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1710)
+at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:790)
+at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+at io.restassured.internal.RequestSpecificationImpl.put(RequestSpecificationImpl.groovy:180)
+at io.restassured.internal.RequestSpecificationImpl.put(RequestSpecificationImpl.groovy)
+at Endpoints.BrandListEndpoint.putAllBrandList(BrandListEndpoint.java:12)
+at TestCases.PutToAllBrandList.putToAllBrandList(PutToAllBrandList.java:13)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.net.SocketException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- putToAllBrandList -->
+      </class> <!-- TestCases.PutToAllBrandList -->
+      <class name="TestCases.PostAllProductListTest">
+        <test-method signature="postAllProductList()[pri:0, instance:TestCases.PostAllProductListTest@35d019a3]" started-at="2024-08-10T21:08:43 IST" name="postAllProductList" finished-at="2024-08-10T21:08:45 IST" duration-ms="1524" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postAllProductList -->
+      </class> <!-- TestCases.PostAllProductListTest -->
+      <class name="TestCases.PostToVerifyLoginWithoutEmailParameter">
+        <test-method signature="postToVerifyLoginWithoutEmailParameter()[pri:0, instance:TestCases.PostToVerifyLoginWithoutEmailParameter@49e53c76]" started-at="2024-08-10T21:08:36 IST" name="postToVerifyLoginWithoutEmailParameter" finished-at="2024-08-10T21:08:38 IST" duration-ms="1759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postToVerifyLoginWithoutEmailParameter -->
+      </class> <!-- TestCases.PostToVerifyLoginWithoutEmailParameter -->
+      <class name="TestCases.DeleteMethodToDeleteUserAccountTest">
+        <test-method signature="deleteMethodToDeleteUserAccountTest()[pri:0, instance:TestCases.DeleteMethodToDeleteUserAccountTest@4c371370]" started-at="2024-08-10T21:08:47 IST" name="deleteMethodToDeleteUserAccountTest" finished-at="2024-08-10T21:08:49 IST" duration-ms="1601" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteMethodToDeleteUserAccountTest -->
+      </class> <!-- TestCases.DeleteMethodToDeleteUserAccountTest -->
+      <class name="TestCases.PostToVerifyLoginWithValidDetailsTest">
+        <test-method signature="postToVerifyLoginWithValidDetail()[pri:0, instance:TestCases.PostToVerifyLoginWithValidDetailsTest@409bf450]" started-at="2024-08-10T21:08:32 IST" name="postToVerifyLoginWithValidDetail" finished-at="2024-08-10T21:08:34 IST" duration-ms="1940" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postToVerifyLoginWithValidDetail -->
+      </class> <!-- TestCases.PostToVerifyLoginWithValidDetailsTest -->
+      <class name="TestCases.GetAllProductListTest">
+        <test-method signature="getAllProductListTest()[pri:0, instance:TestCases.GetAllProductListTest@2a3b5b47]" started-at="2024-08-10T21:08:40 IST" name="getAllProductListTest" finished-at="2024-08-10T21:08:42 IST" duration-ms="2046" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllProductListTest -->
+      </class> <!-- TestCases.GetAllProductListTest -->
+      <class name="TestCases.PutMethodToUpdateUserAccountTest">
+        <test-method signature="putMethodToUpdateUserAccount()[pri:0, instance:TestCases.PutMethodToUpdateUserAccountTest@351d00c0]" started-at="2024-08-10T21:08:38 IST" name="putMethodToUpdateUserAccount" finished-at="2024-08-10T21:08:40 IST" duration-ms="1928" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- putMethodToUpdateUserAccount -->
+      </class> <!-- TestCases.PutMethodToUpdateUserAccountTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

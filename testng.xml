@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">
+	<listeners>
+		<listener class-name="Utilities.ExtentReportManager"></listener>
+	</listeners>
+	<test thread-count="5" parallel="tests" name="Test">
+		<classes>
+			<class name="TestCases.CreateUserAccountTest" />
+			<class name="TestCases.PostToVerifyLoginWithValidDetailsTest" />
+			<class name="TestCases.PostToVerifyLoginWithInvalidDetails" />
+			<class name="TestCases.PostToVerifyLoginWithoutEmailParameter" />
+			<class name="TestCases.PutMethodToUpdateUserAccountTest" />
+			<class name="TestCases.GetAllProductListTest" />
+			<class name="TestCases.GetUserAccountDetailByEmail" />
+			<class name="TestCases.PostAllProductListTest" />
+			<class name="TestCases.PutToAllBrandList" />
+			<class name="TestCases.PostToSearchProductWithoutParametersTest" />
+			<class name="TestCases.PostToSearchProductTest" />
+			<class name="TestCases.DeleteMethodToDeleteUserAccountTest" />
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->
